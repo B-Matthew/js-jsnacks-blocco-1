@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Odd&Pair</title>
+    <style media="screen">
+      #pair {
+        color: red;
+        text-align: center;
+        font-size: 30px;
+        margin: 50px 0;
+      }
+      #odd {
+        color: green;
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pair">
+      Ciao questi sono i miei numeri:
+    </div>
+    <div id="odd">
+      Ciao questi sono i tuoi numeri:
+    </div>
+    <script type="text/javascript">
+
+    // Crea due tag div con due id diversi.
+    // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+    // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+    // dispari e in verde i numeri pari.
+
+    var arr = [34,4356,234,6,54,23,4,6,2,7,6,8,23,756,7,3,42,4,458,887,345,367];
+    var htmlPair = document.getElementById("pair");
+    var htmlOdd = document.getElementById("odd");
+
+    for (var i = 0; i < arr.length; i++) {
+
+      var elem = arr[i];
+      if (elem % 2 == 0) {
+
+        htmlPair.innerHTML += elem + " ";
+      }
+      else {
+
+        htmlOdd.innerHTML += elem + " ";
+      }
+    }
+    </script>
+
+  </body>
+</html>
