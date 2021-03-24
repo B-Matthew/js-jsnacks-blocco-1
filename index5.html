@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ObjArray</title>
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script>
+
+      function esercizio1() {
+
+        var arr = {
+          "nome" : "Matthew",
+          "cognome" : "Battistini",
+          "eta" : 28
+        }
+        for (var studente in arr) {
+          console.log(studente , " : " , arr[studente]);
+        }
+        console.log(arr);
+      }
+
+      function esercizio2() {
+
+        var arr = [
+          studente1 = {
+            "nome" : "Bruno" ,
+            "cognome" : "Corradi",
+          },
+          studente2 = {
+            "nome" : "Carlo",
+            "cognome" : "Bruni",
+          },
+          studente3 = {
+            "nome" : "Zorro",
+            "cognome" : "Zorrone",
+          },
+          studente4 = {
+            "nome" : "Cosmo",
+            "cognome" : "Wanda",
+          },
+          studente5 = {
+            "nome" : "Pelle",
+            "cognome" : "DiPollo",
+          }
+        ]
+
+        for(var i = 0; i < arr.length; i++){
+
+        console.log(arr[i]['nome'],arr[i]['cognome']);
+      }
+    }
+
+    function esercizio3() {
+
+      var nome = prompt("Inserisci il nome");
+      var cognome = prompt("Inserisci il cognome");
+      var eta = prompt("Inserisci l'età");
+
+      var arr = [
+        studente1 = {
+          "nome" : "Bruno" ,
+          "cognome" : "Corradi",
+        },
+        studente2 = {
+          "nome" : "Carlo",
+          "cognome" : "Bruni",
+        },
+        studente3 = {
+          "nome" : "Zorro",
+          "cognome" : "Zorrone",
+        },
+        studente4 = {
+          "nome" : "Cosmo",
+          "cognome" : "Wanda",
+        },
+        studente5 = {
+          "nome" : "Pelle",
+          "cognome" : "DiPollo",
+        },
+        studente6 = {
+          "nome" : nome,
+          "cognome" : cognome,
+          "eta" : eta
+        }
+      ]
+
+      for(var i = 0; i < arr.length; i++){
+
+      console.log(arr[i]["nome"],arr[i]["cognome"]);
+    }
+  }
+
+
+
+      function init(){
+
+        // esercizio1();
+        esercizio2();
+        // esercizio3();
+      }
+
+      $(document).ready(init);
+    </script>
+
+  </body>
+</html>
